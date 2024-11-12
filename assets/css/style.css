@@ -1,5 +1,5 @@
 /* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Variáveis */
 :root, :root[data-theme='light'] {
@@ -51,8 +51,8 @@
     vertical-align: baseline;
     list-style: none;
     border: 0;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+    font-size: 18px;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -235,6 +235,10 @@ img.icone-tecnologia {
     margin-top: -9rem;
     padding: 1rem 3rem;
     padding-bottom: 12rem;
+}
+
+.logo-contato {
+    filter: var(--filtro-cor);
 }
 
 a.link-contato {
