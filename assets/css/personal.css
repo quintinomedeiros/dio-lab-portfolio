@@ -37,7 +37,7 @@
 }
 
 body {
-    background-color: #d3d3d3;
+    background-color: #e6e5e5;
     margin: 3rem;
 }
 
@@ -187,7 +187,7 @@ img.icone-tecnologia {
 .secao-contato {
     background-color: var(--ciza-claro);
     border-radius: var(--borda-secoes);
-    max-height: 11rem;
+    max-height: 15rem;
     margin-top: -9rem;
     padding: 1rem 3rem;
     padding-bottom: 12rem;

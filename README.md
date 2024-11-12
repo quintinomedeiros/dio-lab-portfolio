@@ -1,25 +1,10 @@
-<h1>
-    <a href="https://www.dio.me/">
-     <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
-    <span>Construindo seu Portfólio Front-end do Zero</span>
-</h1>
-
-Repositório desenvolvido para fins didáticos, com a disponibilização de materiais de apoio para o lab **Construindo seu Portfólio Front-end do Zero** da [Digital Innovation One](https://www.dio.me/).
-
-[![Link do Lab](https://img.shields.io/badge/▶-000?style=for-the-badge&logo=movie&logoColor=E94D5F)](https://web.dio.me/lab/construindo-seu-portfolio-front-end-do-zero/learning/81cbe4c1-6e9e-4ce3-be7d-412aef4efb24) 
-[![Link do Lab](https://img.shields.io/badge/Acesse%20o%20Lab%20na%20Plataforma-E94D5F?style=for-the-badge)](https://web.dio.me/lab/construindo-seu-portfolio-front-end-do-zero/learning/81cbe4c1-6e9e-4ce3-be7d-412aef4efb24)
-
-## Objetivo
-Construir seu Primeiro Portfólio Front-end do Zero.
-
-## Tecnologias
-[![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript&logoColor=30A3DC)]()
-[![HTML5](https://img.shields.io/badge/HTML5-000?style=for-the-badge&logo=html5&logoColor=E94D5F)]() 
-[![CSS3](https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=30A3DC)]()
-[![Figma](https://img.shields.io/badge/Protótipo%20no%20Figma-000?style=for-the-badge&logo=figma&logoColor=E94D5F)](https://www.figma.com/file/NkndT2SbyHJZWLEsaM8Xn3/DIO-Lab-Portf%C3%B3lio)
-
-## Desafio: Portfólio Front-end
-Crie seu próprio portfólio front-end, atentando-se para que seja autêntico, visualmente atraente e responsivo. Sinta-se livre para utilizar as tecnologias que desejar e expressar sua personalidade e estilo através do design e dos elementos interativos do seu portfólio. Após concluir, você pode hospedá-lo em uma plataforma de sua escolha, como GitHub Pages, Netlify, Vercel, etc.
-
-##
-<div align="center">Feito com 💙 por <a href="https://github.com/elidianaandrade">Eli</a>.</div>
+<div>
+    <h2>Sobre mim</h2>
+    <p>Oi, me chamo <strong>Quintino Medeiros</strong> e gostaria de falar um pouco sobre mim, meus projetos passados, presentes e futuros!</p>
+    <p>Ao longo da minha carreira, tive a oportunidade de atuar em diversas organizações, tanto na iniciativa privada quanto no setor público. Sempre me dediquei a entregar resultados de excelência, além de melhorar processos e produtos sob minha gestão. Durante essa jornada, gerenciei e participei de inúmeros projetos, buscando continuamente o aprendizado e o crescimento. E, com muito orgulho, fiz grandes amizades por onde passei.</p>
+    <p>Meu foco sempre foi equilibrar pessoas, processos e resultados, buscando promover saúde, qualidade de vida e alta performance, tanto para mim quanto para as equipes com as quais trabalhei.</p>
+    <p>Minha formação inicial foi em Psicologia, em níveis de graduação e mestrado, com ênfase nas áreas organizacional, social e da saúde. Minha trajetória profissional seguiu pela Gestão de Pessoas, onde desenvolvi expertise em avaliação de desempenho, recrutamento, seleção e desenvolvimento de talentos.</p>
+    <p>Com o intuito de aprimorar ainda mais minhas habilidades e fortalecer o relacionamento com colegas de trabalho, especializei-me em Gestão de Pessoas, Gestão Pública e Auditoria. Essas especializações permitiram-me agregar os conceitos da administração moderna às minhas atividades diárias.</p>
+    <p>Durante minha jornada trabalhei em organizações diversas como Governo do Distrito Federal, Banco do Brasil, Tribunal Superior Eleitoral, Conselho Nacional de Justiça e desde 2016 atuo como Analista Legislativo na Câmara dos Deputados lotado na Coordenação de Tecnologias Educacionais e Comunicação do Centro de Formação, Treinamento e Aperfeiçoamento - Cefor.</p>
+    <p>Nos últimos anos, considerando que sempre trabalhei com processos e produtos mediados por sistemas informatizados, decidi expandir meus conhecimentos para Análise e Desenvolvimento de Sistemas. Tenho focado no desenvolvimento web front-end, análise e visualização de dados, e, mais recentemente, no aprofundamento dos estudos sobre Análise e Demonstração de Dados, com a construção de paineis gerenciais e no conhecimento sobre modelos aplicados de inteligência artificial.</p>
+</div>
