@@ -216,10 +216,9 @@ p.direitos-reservados {
     }
 
     .menu-superior {
-        display: grid;
-        grid-area: 1fr 5fr;
-        line-height: 1rem;
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu-list {
@@ -229,11 +228,12 @@ p.direitos-reservados {
     .menu-list-short {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        gap: 0.75rem;
+        margin: 2rem;
     }
 
     .logo {
-        margin: 0 auto 2rem;
+        max-height: 3rem;
     }
     
     .logo-nome {
@@ -259,32 +259,14 @@ p.direitos-reservados {
     }
     
     div#redes-sociais {
-        max-height: 6rem;
+        max-height: 22rem;
+    }
+
+    a.link-contato img {
+        height: 2rem;
     }
 
     a.link-contato span {
         font-size: 0.75rem;
-    }
-
-}
-
-@media (max-width: 640px) {
-    .menu-superior {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        max-height: 3rem;
-    }
-
-    .menu-list-short {
-        gap: 0.75rem;
-        margin-top: 1rem;
-    }
-
-    img.icone-tecnologia {
-        max-width: 17.5%;
     }
 }
