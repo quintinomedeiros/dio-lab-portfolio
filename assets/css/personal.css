@@ -1,0 +1,290 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variáveis */
+:root {
+    --borda-secoes: 5rem;
+    --altura-minima-secao: 25rem;
+    --padding-inicial-secao: 3rem;
+
+    /* Cores */
+    --cinza-base: #EEEDEB;
+    --ciza-claro: #f8f6f4;
+    --cinza-medio: #5A6A70;
+    --cinza-escuro: #46403A;
+    --destaque-texto: #F0A148;
+    --fundo-destaque: #F08448;
+    --destaque-claro: #F0D398;
+    --destaque-fundo: #815727;
+    --verde-escuro: #629B6D;
+    --verde-destaque: #48F067;
+    --azul-escuro: #6199B0;
+    --azul-destaque: #48BEF0;
+
+}
+
+/* Estilos globais */
+*{ 
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d3d3d3;
+    margin: 3rem;
+}
+
+.secao-um h2, .secao-dois h2, .secao-tres h2, .secao-contato h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--azul-escuro);
+    margin: 2rem;
+    text-align: center;
+}
+
+.secao-um p, .secao-dois p, .secao-contato p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--destaque-texto);
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--destaque-texto);
+    text-shadow: 3px 3px 3px var(--destaque-claro);
+}
+
+/* Menu superior */
+.menu-superior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list-short {
+    display: none;
+}
+
+.logo {
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo a img {
+    max-width: 64px;
+}
+
+.logo-nome {
+    color: var(--fundo-destaque);
+    font-weight: 600;
+    font-size: 0.75rem;
+    margin-top: -1rem;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+/* Conteúdo principal */
+#main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.secao-um, .secao-tres {
+    background-image: url(../images/bg-cinza.jpg);
+    background-size: initial;
+    background-repeat: repeat;
+    /* min-height: var(--altura-minima-secao); */
+    border-radius: var(--borda-secoes);
+    padding: var(--padding-inicial-secao);
+    padding-bottom: 11rem;
+}
+
+span.nome-autor {
+    color: var(--fundo-destaque);
+    font-weight: 700;
+}
+
+.secao-dois {
+    background-color: var(--ciza-claro);
+    border-radius: var(--borda-secoes);
+    min-height: var(--altura-minima-secao);
+    margin-top: -9rem;
+    padding: 1rem 3rem;
+    padding-bottom: 12rem;
+}
+
+.logos-tecnologias {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img.icone-tecnologia {
+    max-width: 20%;
+}
+
+.secao-tres {
+    margin-top: -9rem;
+    padding-top: 1rem;
+}
+
+.img-left {
+    margin: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.img-right {
+    margin: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+}
+
+.img-left p, .img-right p {
+    margin: auto 2rem;
+}
+
+.img-left p img, .img-right p img {
+    width: 18px;
+    margin-right: .5rem;
+}
+
+.spider-man-frame, .piano-frame, .painel-frame {
+    max-width: 75%;
+    margin: auto 2rem;
+}
+
+.mundo-invertido-frame, .you-gi-oh-frame {
+    max-width: 95%;
+    margin: auto 2rem;
+}
+
+/* Contato */
+.secao-contato {
+    background-color: var(--ciza-claro);
+    border-radius: var(--borda-secoes);
+    max-height: 11rem;
+    margin-top: -9rem;
+    padding: 1rem 3rem;
+    padding-bottom: 12rem;
+}
+
+a.link-contato {
+    display: flex;
+    align-items: center;
+}
+
+span.nome-contato {
+    margin-left: 1rem;
+}
+
+p.direitos-reservados {
+    color: var(--azul-escuro);
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 992px) {
+    body, #main-content {
+        max-width: 100vw;
+    }
+
+    .menu-superior {
+        display: grid;
+        grid-area: 1fr 5fr;
+        line-height: 1rem;
+        margin: 0;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .menu-list-short {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .logo {
+        margin: 0 auto 2rem;
+    }
+    
+    .logo-nome {
+        margin-top: -0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .img-right, .img-left {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    .img-right p, .img-left p {
+        margin: 0;
+    }
+
+    .mundo-invertido-frame, .you-gi-oh-frame, .spider-man-frame, .piano-frame, .painel-frame {
+        margin: 1rem auto;
+    }
+
+    .mundo-invertido-frame, .you-gi-oh-frame {
+        order: 2;
+    }
+    
+    div#redes-sociais {
+        max-height: 6rem;
+    }
+
+    a.link-contato span {
+        font-size: 0.75rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .menu-superior {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        max-height: 3rem;
+    }
+
+    .menu-list-short {
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    img.icone-tecnologia {
+        max-width: 17.5%;
+    }
+}
