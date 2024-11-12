@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Variáveis */
-:root {
+:root, :root[data-theme='light'] {
     --borda-secoes: 5rem;
     --altura-minima-secao: 25rem;
     --padding-inicial-secao: 3rem;
 
     /* Cores */
+    --cinza-bg-body: #d7d7d7;
     --cinza-base: #EEEDEB;
     --ciza-claro: #f8f6f4;
     --cinza-medio: #5A6A70;
@@ -20,7 +21,27 @@
     --verde-destaque: #48F067;
     --azul-escuro: #6199B0;
     --azul-destaque: #48BEF0;
+    --preto: #000;
+    --filtro-cor: brightness(0) invert(0);
+}
 
+:root[data-theme='dark'] {
+    /* Cores */
+    --cinza-bg-body: #46403A;
+    --cinza-base: #838282;
+    --ciza-claro: #5A6A70;
+    --cinza-medio: #78D0F0;
+    --cinza-escuro: #6199B0;
+    --destaque-texto: #48F0EC;
+    --fundo-destaque: #48C1F0;
+    --destaque-claro: #6199B0;
+    --destaque-fundo: #97D6F0;
+    --verde-escuro: #629B6D;
+    --verde-destaque: #48F067;
+    --azul-escuro: #48C1F0;
+    --azul-destaque: #97D6F0;
+    --preto: #fff;
+    --filtro-cor: brightness(0) invert(1);
 }
 
 /* Estilos globais */
@@ -37,8 +58,9 @@
 }
 
 body {
-    background-color: #e6e5e5;
+    background-color: var(--cinza-bg-body);
     margin: 3rem;
+    color: var(--preto);
 }
 
 .secao-um h2, .secao-dois h2, .secao-tres h2, .secao-contato h2 {
@@ -53,13 +75,13 @@ body {
     margin-bottom: 1rem;
 }
 
-a {
-    color: var(--destaque-texto);
+a, .bi-moon-stars-fill {
+    color: var(--fundo-destaque);
     font-weight: 700;
 }
 
 a:hover {
-    color: var(--destaque-texto);
+    color: var(--fundo-destaque);
     text-shadow: 3px 3px 3px var(--destaque-claro);
 }
 
@@ -70,11 +92,11 @@ a:hover {
     left: 3rem;
     width: 100%;
     padding-right: 3rem;
-    background-color: #e6e5e5;
+    background-color: var(--cinza-bg-body);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu-list-short {
@@ -108,20 +130,31 @@ a:hover {
     margin-right: 4rem;
 }
 
+#toggleTheme {
+    transition: ease-in-out 0.4s;
+}
+
+.bi-emoji-sunglasses-fill {
+    color: var(--fundo-destaque);
+}
+
+.bi-emoji-sunglasses-fill:hover, .bi-moon-stars-fill:hover {
+    cursor: pointer;
+}
+
 /* Conteúdo principal */
 #main-content {
     width: 100%;
     height: 100%;
+    margin-top: 1rem;
 }
 
 .secao-um {
-    margin-top: 11rem;
+    margin-top: 8rem;
 }
 
 .secao-um, .secao-tres {
-    background-image: url(../images/bg-cinza.jpg);
-    background-size: initial;
-    background-repeat: repeat;
+    background-color: var(--cinza-base);
     /* min-height: var(--altura-minima-secao); */
     border-radius: var(--borda-secoes);
     padding: var(--padding-inicial-secao);
@@ -181,6 +214,7 @@ img.icone-tecnologia {
 .img-left p img, .img-right p img {
     width: 18px;
     margin-right: .5rem;
+    filter: var(--filtro-cor);
 }
 
 .spider-man-frame, .piano-frame, .painel-frame {
